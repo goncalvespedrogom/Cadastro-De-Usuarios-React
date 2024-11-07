@@ -6,7 +6,7 @@
 }
 
 h1 {
-    color: #fff;
+    color: #0e9467;
     font-size: 2rem;
     text-align: center;
 }
@@ -17,14 +17,16 @@ form {
     gap: 1.85rem;
     padding: 1.85rem;
     border-radius: 0.625rem;
-    background-color: #2E2D4E;
+    background-color: #ffffff;
     max-width: 50%;
     width: 400px;
     margin-bottom: 1.25rem;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+
 
     & button {
         border-radius: 1.875rem;
-        background-color: #8B8AE1;
+        background-color: #0e9467;
         height: 2.5rem;
         border: none;
         font-weight: 600;
@@ -39,25 +41,31 @@ form {
     }
 
     & input {
-        border: 1px solid #4E456C;
+        border: 1px solid #0e9467;
         border-radius: 1.875rem;
         height: 2.5rem;
-        background-color: #363653;
-        color: #fff;
+        background-color: transparent;
+        color: #000;
         font-size: 1rem;
         padding: 10px 20px;
         outline: none;
+    }
+
+    & input:hover {
+        opacity: .8;
+        background-color: #0e946713;
     }
 }
 
 .card {
     display: flex;
     justify-content: space-between;
-    background-color: #2E2D4E;
+    background-color: #0e9467;
     margin: 0.625rem;
     padding: 0.9rem 1rem;
     width: 400px;
     border-radius: 0.625rem;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
 
     & p {
         color: #fff;
@@ -73,6 +81,7 @@ form {
         background-color: transparent;
         border: none;
         cursor: pointer;
+        opacity: .7;
 
         & img {
             width: 1.3rem;
@@ -80,7 +89,11 @@ form {
     }
 
     & button:hover {
-        opacity: .7;
+        opacity: 2;
         transition: .2s;
     }
+}
+
+.card:hover {
+    opacity: .8;
 }
